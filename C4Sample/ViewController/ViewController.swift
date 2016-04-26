@@ -7,15 +7,23 @@
 //
 
 import UIKit
-import C4
 
-// Wedge: 扇型
-// map: 範囲変換
-class ViewController: CanvasController {
+class ViewController: UIViewController {
+    
+    @IBOutlet weak var selectSampleTableView: UITableView!
+    
+    let titles = ["PieChart"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        title = "C4 Sample"
+        
+        selectSampleTableView.delegate = self
+        selectSampleTableView.dataSource = self
+        selectSampleTableView.tableFooterView = UIView()
+        selectSampleTableView.setContentOffset(CGPoint.zero, animated: false)
+        selectSampleTableView.separatorColor = UIColor.lightGrayColor()
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,25 +31,34 @@ class ViewController: CanvasController {
         // Dispose of any resources that can be recreated.
     }
     
-    func drawPirChart(angles: [Double], center: Point, radius: Double) {
-        let count = angles.count
-        let colors = (0..<count).map{ i in Double(i) / Double(count) }
-        
-        var currentAngle = -M_PI/2
-        for (angleDegree, colorValue) in zip(angles, colors) {
-            let angle = degToRad(angleDegree)
-            let wedge = Wedge(center: center, radius: radius, start: currentAngle, end: currentAngle + angle)
-            wedge.fillColor = Color(red: colorValue, green: colorValue, blue: colorValue, alpha: 1.0)
-            wedge.lineWidth = 0.0
-            currentAngle += angle
-            canvas.add(wedge)
-        }
-    }
-    
-    override func setup() {
-        let angles: [Double] = [30.0, 10, 45, 35, 60, 38, 75, 67]
-        drawPirChart(angles, center: canvas.center, radius: 150)
-    }
-    
 }
 
+extension ViewController: UITableViewDataSource {
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return titles.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("SelectSampleTableViewCell") as! SelectSampleTableViewCell
+        cell.titleLabel.text = titles[indexPath.row]
+        return cell
+    }
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+}
+
+extension ViewController: UITableViewDelegate {
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        let controller: UIViewController
+        if indexPath.row == 0 {
+            controller = PieChartViewController()
+        } else {
+            controller = PieChartViewController()
+        }
+        controller.title = titles[indexPath.row]
+        navigationController?.pushViewController(controller, animated: true)
+    }
+}
