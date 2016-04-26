@@ -12,7 +12,11 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var selectSampleTableView: UITableView!
     
-    let titles = ["PieChart"]
+    let samples: [(title: String, type: UIViewController.Type)] = [
+        ("PieChart", PieChartViewController.self),
+        ("CircleAnimation", CircleAnimationViewController.self),
+        ("SkypeLoader", SkypeLoaderViewController.self)
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,12 +39,12 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDataSource {
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return titles.count
+        return samples.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("SelectSampleTableViewCell") as! SelectSampleTableViewCell
-        cell.titleLabel.text = titles[indexPath.row]
+        cell.titleLabel.text = samples[indexPath.row].title
         return cell
     }
     
@@ -52,13 +56,11 @@ extension ViewController: UITableViewDataSource {
 extension ViewController: UITableViewDelegate {
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        let controller: UIViewController
-        if indexPath.row == 0 {
-            controller = PieChartViewController()
-        } else {
-            controller = PieChartViewController()
-        }
-        controller.title = titles[indexPath.row]
+        
+        let controller = samples[indexPath.row].type.init()
+
+        controller.title = samples[indexPath.row].title
+        
         navigationController?.pushViewController(controller, animated: true)
     }
 }

@@ -15,7 +15,7 @@ class PieChartViewController: CanvasController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    func drawPirChart(angles: [Double], center: Point, radius: Double) {
+    func drawPieChart(angles: [Double], center: Point, radius: Double) {
         let count = angles.count
         let colors = (0..<count).map{ i in Double(i) / Double(count) }
         
@@ -32,13 +32,11 @@ class PieChartViewController: CanvasController {
     
     override func setup() {
         let angles: [Double] = [30.0, 10, 45, 35, 60, 38, 75, 67]
-        drawPirChart(angles, center: canvas.center, radius: 150)
+        drawPieChart(angles, center: canvas.center, radius: 150)
     }
-    
     
     // ステータスバーを表示
     override func prefersStatusBarHidden() -> Bool {
         return false
     }
-    
 }

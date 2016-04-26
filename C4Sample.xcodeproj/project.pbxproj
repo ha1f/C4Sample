@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		28D50A58DDFEA328CAFC7382 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B2EE8A4F73F7A0CF79CCCFF /* Pods.framework */; };
+		5555D73E1CCFA6C4004991BC /* CircleAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5555D73D1CCFA6C4004991BC /* CircleAnimationViewController.swift */; };
+		5555D7411CCFB902004991BC /* SkypeLoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5555D7401CCFB902004991BC /* SkypeLoaderViewController.swift */; };
 		556962181CCE63E600525025 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556962171CCE63E600525025 /* AppDelegate.swift */; };
 		5569621A1CCE63E600525025 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556962191CCE63E600525025 /* ViewController.swift */; };
 		5569621D1CCE63E600525025 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5569621B1CCE63E600525025 /* Main.storyboard */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5555D73D1CCFA6C4004991BC /* CircleAnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleAnimationViewController.swift; sourceTree = "<group>"; };
+		5555D7401CCFB902004991BC /* SkypeLoaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkypeLoaderViewController.swift; sourceTree = "<group>"; };
 		556962141CCE63E600525025 /* C4Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = C4Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		556962171CCE63E600525025 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		556962191CCE63E600525025 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = C4Sample/ViewController/ViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -100,6 +104,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5555D73F1CCFB8BA004991BC /* SkypeLoader */ = {
+			isa = PBXGroup;
+			children = (
+				5555D7401CCFB902004991BC /* SkypeLoaderViewController.swift */,
+			);
+			path = SkypeLoader;
+			sourceTree = "<group>";
+		};
 		5569620B1CCE63E600525025 = {
 			isa = PBXGroup;
 			children = (
@@ -158,7 +170,9 @@
 			children = (
 				556962191CCE63E600525025 /* ViewController.swift */,
 				556962461CCE6DD600525025 /* PieChartViewController.swift */,
+				5555D73D1CCFA6C4004991BC /* CircleAnimationViewController.swift */,
 				556962481CCE701000525025 /* SelectSampleTableViewCell.swift */,
+				5555D73F1CCFB8BA004991BC /* SkypeLoader */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -348,10 +362,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5555D7411CCFB902004991BC /* SkypeLoaderViewController.swift in Sources */,
 				556962471CCE6DD600525025 /* PieChartViewController.swift in Sources */,
 				5569621A1CCE63E600525025 /* ViewController.swift in Sources */,
 				556962181CCE63E600525025 /* AppDelegate.swift in Sources */,
 				556962491CCE701000525025 /* SelectSampleTableViewCell.swift in Sources */,
+				5555D73E1CCFA6C4004991BC /* CircleAnimationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
