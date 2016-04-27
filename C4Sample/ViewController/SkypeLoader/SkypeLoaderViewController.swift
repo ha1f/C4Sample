@@ -43,9 +43,10 @@ class SkypeLoaderViewController: CanvasController {
     }
     
     func createViewsCircles() {
-        container = View(frame: Rect(0,0,1,1))
+        container = View(frame: Rect(0, 0, 1, 1))
         for _ in 0..<4 {
-            let v = View(frame: Rect(0,0,10,10))
+            // circleピッタリ
+            let v = View(frame: Rect(0, 0, 10, 10))
             views.append(v)
             
             let c = Circle(center: v.center, radius: v.width/2.0)
@@ -55,7 +56,7 @@ class SkypeLoaderViewController: CanvasController {
             circles.append(c)
             
             v.add(c)
-            v.anchorPoint = Point(0.5,7.5)
+            v.anchorPoint = Point(0.5, 7.5)
             v.center = container.center
             container.add(v)
         }
