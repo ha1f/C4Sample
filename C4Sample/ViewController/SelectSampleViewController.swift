@@ -12,11 +12,7 @@ class SelectSampleViewController: UIViewController {
     
     @IBOutlet weak var selectSampleTableView: UITableView!
     
-    let samples: [(title: String, type: UIViewController.Type)] = [
-        ("PieChart", PieChartViewController.self),
-        ("CircleAnimation", CircleAnimationViewController.self),
-        ("SkypeLoader", SkypeLoaderViewController.self)
-    ]
+    let samples = Setting.samples
     
     override func viewDidLoad() {
         super.viewDidLoad()

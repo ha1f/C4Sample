@@ -44,12 +44,13 @@ class SkypeLoaderViewController: CanvasController {
     
     func createViewsCircles() {
         container = View(frame: Rect(0, 0, 1, 1))
+        let circleRadius = 5.0
         for _ in 0..<4 {
             // circleピッタリ
-            let v = View(frame: Rect(0, 0, 10, 10))
+            let v = View(frame: Rect(0, 0, circleRadius*2, circleRadius*2))
             views.append(v)
             
-            let c = Circle(center: v.center, radius: v.width/2.0)
+            let c = Circle(center: Point(circleRadius, circleRadius), radius: circleRadius)
             c.lineWidth = 10.0
             c.strokeColor = white
             c.fillColor = white
@@ -66,16 +67,13 @@ class SkypeLoaderViewController: CanvasController {
     
     func createAnimations() {
         var canims = [ViewAnimation]()
-        var vanims = [ViewAnimation]()
         
-        for (i,v) in views.enumerate() {
-            let offset = Double(i) * 0.1 + 0.05
-            
+        let vanims: [ViewAnimation] = views.enumerate().map { (i,v) in
             let va = ViewAnimation(duration: duration/4.0 + 0.3) {
                 v.rotation += M_PI
             }
-            va.delay = offset
-            vanims.append(va)
+            va.delay = Double(i) * 0.1 + 0.05
+            return va
         }
         
         for (i,c) in circles.enumerate() {
