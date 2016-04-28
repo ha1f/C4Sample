@@ -17,10 +17,10 @@ class SlackLine: View {
         }
     }
     
-    override init() {
+    init(size: Double) {
         super.init()
-        self.frame = Rect(0,0,106,18.0)
-        line = Line(Point(height/2.0,height/2.0),Point(width-height/2.0,height/2.0))
+        self.frame = Rect(0, 0, size, size * 9.0/53.0)
+        line = Line(Point(height/2.0, height/2.0), Point(width-height/2.0, height/2.0))
         line.lineWidth = height
         add(line)
     }

@@ -15,30 +15,31 @@ class SlackLogo: View {
     static let COLOR_YELLOW = Color(red: 0.91, green: 0.70, blue: 0.21, alpha: 1.0)
     static let COLOR_PINK = Color(red: 0.87, green: 0.10, blue: 0.42, alpha: 1.0)
     
-    let positions = [Point(53.0, 30.0),Point(76.0, 53.0),Point(53.0, 76.0),Point(30.0, 53.0)]
     var slackLines = [SlackLine]()
 
-    override init() {
+    init(size: Double) {
         super.init()
-        frame = Rect(0,0,106,106)
+        
+        frame = Rect(0, 0, size, size)
+        
+        let positions = (0..<4).map { i in
+            Point(size/2 + size * sin(M_PI/2 * Double(i)) * 23/106,
+                size/2 - size * cos(M_PI/2 * Double(i)) * 23/106)
+        }
         
         let colors = [SlackLogo.COLOR_BLUE, SlackLogo.COLOR_YELLOW, SlackLogo.COLOR_PINK, SlackLogo.COLOR_GREEN]
         
         for (i, (position, color)) in zip(positions, colors).enumerate() {
-            let slackline = SlackLine()
+            let slackline = SlackLine(size: size)
             slackline.center = position
             slackline.strokeColor = color
             
-            let dir = i % 2 == 0 ? 1.0 : -1.0
-            slackline.transform = Transform.makeRotation(dir * Double(i) * M_PI/2)
+            slackline.transform = Transform.makeRotation(Double(i) * M_PI/2)
             
             slackLines.append(slackline)
-            //add(slackline)
         }
         
-        for line in slackLines {
-            add(line)
-        }
+        slackLines.forEach(add)
         
         rotation = -M_PI/10.0
     }

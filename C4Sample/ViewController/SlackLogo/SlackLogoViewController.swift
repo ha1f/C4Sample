@@ -11,7 +11,7 @@ import C4
 class SlackLogoViewController: CanvasController {
     
     override func setup() {
-        let sl = SlackLogo()
+        let sl = SlackLogo(size: 106)
         sl.center = canvas.center
         canvas.add(sl)
     }
