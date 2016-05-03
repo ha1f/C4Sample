@@ -42,7 +42,7 @@ class SkypeLoaderViewController: CanvasController {
         containerAnim.animate()
     }
     
-    func createViewsCircles() {
+    private func createViewsCircles() {
         container = View(frame: Rect(0, 0, 1, 1))
         let circleRadius = 5.0
         for _ in 0..<4 {
@@ -65,8 +65,7 @@ class SkypeLoaderViewController: CanvasController {
         container.center = canvas.center
     }
     
-    func createAnimations() {
-        var canims = [ViewAnimation]()
+    private func createAnimations() {
         
         let vanims: [ViewAnimation] = views.enumerate().map { (i,v) in
             let va = ViewAnimation(duration: duration/4.0 + 0.3) {
@@ -76,7 +75,7 @@ class SkypeLoaderViewController: CanvasController {
             return va
         }
         
-        for (i,c) in circles.enumerate() {
+        let canims: [ViewAnimation] = circles.enumerate().map { (i,c) in
             let offset = Double(i) * 0.1 + 0.05
             
             let ca = ViewAnimation(duration: duration/8.0 + 0.15) {
@@ -89,7 +88,7 @@ class SkypeLoaderViewController: CanvasController {
                 c.lineWidth = 10.0
                 ShapeLayer.disableActions = false
             }
-            canims.append(ca)
+            return ca
         }
         viewAnimationGroup = ViewAnimationGroup(animations: vanims)
         circleAnimationGroup = ViewAnimationGroup(animations: canims)

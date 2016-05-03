@@ -14,6 +14,10 @@ class SlackLogoViewController: CanvasController {
         let sl = SlackLogo(size: 106)
         sl.center = canvas.center
         canvas.add(sl)
+
+        canvas.addTapGestureRecognizer { locations, center, state in
+            sl.animate()
+        }
     }
     
     // ステータスバーを表示

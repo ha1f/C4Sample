@@ -34,7 +34,8 @@ class SlackLogo: View {
             slackline.center = position
             slackline.strokeColor = color
             
-            slackline.transform = Transform.makeRotation(Double(i) * M_PI/2)
+            let angle = -Double(i) * M_PI/2
+            slackline.transform = Transform.makeRotation(angle)
             
             slackLines.append(slackline)
         }
@@ -44,4 +45,11 @@ class SlackLogo: View {
         rotation = -M_PI/10.0
     }
     
+    func animate() {
+        ViewAnimation(duration:0.85) {
+            self.rotation += M_PI * 2
+        }.animate()
+        
+        slackLines.forEach{$0.animate()}
+    }
 }

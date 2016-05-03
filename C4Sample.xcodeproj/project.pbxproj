@@ -115,10 +115,10 @@
 		553B33131CD0498E002EBCAF /* C4Samples */ = {
 			isa = PBXGroup;
 			children = (
-				553B33141CD073F7002EBCAF /* SlackLogo */,
-				5555D73F1CCFB8BA004991BC /* SkypeLoader */,
 				556962461CCE6DD600525025 /* PieChartViewController.swift */,
 				5555D73D1CCFA6C4004991BC /* CircleAnimationViewController.swift */,
+				553B33141CD073F7002EBCAF /* SlackLogo */,
+				5555D73F1CCFB8BA004991BC /* SkypeLoader */,
 			);
 			name = C4Samples;
 			sourceTree = "<group>";
