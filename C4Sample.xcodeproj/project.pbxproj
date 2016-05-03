@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		28D50A58DDFEA328CAFC7382 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B2EE8A4F73F7A0CF79CCCFF /* Pods.framework */; };
+		5518B68E1CD8488800361C22 /* C4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5518B68D1CD8488800361C22 /* C4.framework */; };
 		553B33161CD07492002EBCAF /* SlackLogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553B33151CD07492002EBCAF /* SlackLogoViewController.swift */; };
 		553B33181CD074F0002EBCAF /* SlackLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553B33171CD074F0002EBCAF /* SlackLine.swift */; };
 		553B331A1CD075FD002EBCAF /* SlackLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553B33191CD075FD002EBCAF /* SlackLogo.swift */; };
@@ -43,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5518B68D1CD8488800361C22 /* C4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = C4.framework; path = Carthage/Build/iOS/C4.framework; sourceTree = "<group>"; };
 		553B33151CD07492002EBCAF /* SlackLogoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlackLogoViewController.swift; sourceTree = "<group>"; };
 		553B33171CD074F0002EBCAF /* SlackLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlackLine.swift; sourceTree = "<group>"; };
 		553B33191CD075FD002EBCAF /* SlackLogo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlackLogo.swift; sourceTree = "<group>"; };
@@ -64,9 +65,6 @@
 		556962391CCE63E600525025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		556962461CCE6DD600525025 /* PieChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartViewController.swift; sourceTree = "<group>"; };
 		556962481CCE701000525025 /* SelectSampleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectSampleTableViewCell.swift; sourceTree = "<group>"; };
-		6B40B1C49598F6A17D31C6E8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		9B2EE8A4F73F7A0CF79CCCFF /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F623FE8730CE9FE4A7A397A2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28D50A58DDFEA328CAFC7382 /* Pods.framework in Frameworks */,
+				5518B68E1CD8488800361C22 /* C4.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,19 +93,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		233AC5935CC6381A690837B3 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F623FE8730CE9FE4A7A397A2 /* Pods.debug.xcconfig */,
-				6B40B1C49598F6A17D31C6E8 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		363E9DCEF20B2771D7795529 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9B2EE8A4F73F7A0CF79CCCFF /* Pods.framework */,
+				5518B68D1CD8488800361C22 /* C4.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -148,7 +137,6 @@
 				5569622B1CCE63E600525025 /* C4SampleTests */,
 				556962361CCE63E600525025 /* C4SampleUITests */,
 				556962151CCE63E600525025 /* Products */,
-				233AC5935CC6381A690837B3 /* Pods */,
 				363E9DCEF20B2771D7795529 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -212,12 +200,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5569623C1CCE63E600525025 /* Build configuration list for PBXNativeTarget "C4Sample" */;
 			buildPhases = (
-				68CE278B8D60B6A2F920F1D8 /* Check Pods Manifest.lock */,
 				556962101CCE63E600525025 /* Sources */,
 				556962111CCE63E600525025 /* Frameworks */,
 				556962121CCE63E600525025 /* Resources */,
-				D632E32853E81FF8F6DE3ABF /* Embed Pods Frameworks */,
-				F33D1FD989CC53F33D661556 /* Copy Pods Resources */,
+				5518B68F1CD8489F00361C22 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -338,50 +324,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		68CE278B8D60B6A2F920F1D8 /* Check Pods Manifest.lock */ = {
+		5518B68F1CD8489F00361C22 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/C4.framework",
 			);
-			name = "Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		D632E32853E81FF8F6DE3ABF /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F33D1FD989CC53F33D661556 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -541,9 +496,12 @@
 		};
 		5569623D1CCE63E600525025 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F623FE8730CE9FE4A7A397A2 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = C4Sample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.ha1f.C4Sample;
@@ -553,9 +511,12 @@
 		};
 		5569623E1CCE63E600525025 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6B40B1C49598F6A17D31C6E8 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = C4Sample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.ha1f.C4Sample;

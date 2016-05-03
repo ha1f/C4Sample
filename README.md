@@ -4,8 +4,11 @@ C4frameworkを使ってみる
 ## Getting Started
 
 ```bash
-pod install
+carthage bootstarp
 ```
 
-open C4Sample.xcworkspace
-and Run!
+If you haven't installed carthage, please install before.
+
+Open C4Sample.xcodeproj
+Run!
+
