@@ -24,6 +24,13 @@
 		556962471CCE6DD600525025 /* PieChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556962461CCE6DD600525025 /* PieChartViewController.swift */; };
 		556962491CCE701000525025 /* SelectSampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556962481CCE701000525025 /* SelectSampleTableViewCell.swift */; };
 		55954FC81CD88A4E003023A1 /* SkypeLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55954FC71CD88A4E003023A1 /* SkypeLoaderView.swift */; };
+		55954FD01CD8DD9E003023A1 /* Array2DViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55954FCF1CD8DD9E003023A1 /* Array2DViewController.swift */; };
+		55954FD21CD8E264003023A1 /* DragBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55954FD11CD8E264003023A1 /* DragBoxViewController.swift */; };
+		55954FD41CD8E355003023A1 /* StoringInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55954FD31CD8E355003023A1 /* StoringInputViewController.swift */; };
+		55954FD61CD8E5D9003023A1 /* ContinuousLinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55954FD51CD8E5D9003023A1 /* ContinuousLinesViewController.swift */; };
+		55954FD81CD8E64E003023A1 /* PatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55954FD71CD8E64E003023A1 /* PatternsViewController.swift */; };
+		55954FDA1CD8E707003023A1 /* VectorMathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55954FD91CD8E707003023A1 /* VectorMathViewController.swift */; };
+		55954FDC1CD8E7D3003023A1 /* VectorMath2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55954FDB1CD8E7D3003023A1 /* VectorMath2ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +74,13 @@
 		556962461CCE6DD600525025 /* PieChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartViewController.swift; sourceTree = "<group>"; };
 		556962481CCE701000525025 /* SelectSampleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectSampleTableViewCell.swift; sourceTree = "<group>"; };
 		55954FC71CD88A4E003023A1 /* SkypeLoaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkypeLoaderView.swift; sourceTree = "<group>"; };
+		55954FCF1CD8DD9E003023A1 /* Array2DViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array2DViewController.swift; sourceTree = "<group>"; };
+		55954FD11CD8E264003023A1 /* DragBoxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragBoxViewController.swift; sourceTree = "<group>"; };
+		55954FD31CD8E355003023A1 /* StoringInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoringInputViewController.swift; sourceTree = "<group>"; };
+		55954FD51CD8E5D9003023A1 /* ContinuousLinesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContinuousLinesViewController.swift; sourceTree = "<group>"; };
+		55954FD71CD8E64E003023A1 /* PatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatternsViewController.swift; sourceTree = "<group>"; };
+		55954FD91CD8E707003023A1 /* VectorMathViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VectorMathViewController.swift; sourceTree = "<group>"; };
+		55954FDB1CD8E7D3003023A1 /* VectorMath2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VectorMath2ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +120,7 @@
 		553B33131CD0498E002EBCAF /* C4Samples */ = {
 			isa = PBXGroup;
 			children = (
-				556962461CCE6DD600525025 /* PieChartViewController.swift */,
+				55954FCE1CD8DD7F003023A1 /* Processing */,
 				5555D73D1CCFA6C4004991BC /* CircleAnimationViewController.swift */,
 				553B33141CD073F7002EBCAF /* SlackLogo */,
 				5555D73F1CCFB8BA004991BC /* SkypeLoader */,
@@ -194,6 +208,21 @@
 				553B33131CD0498E002EBCAF /* C4Samples */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		55954FCE1CD8DD7F003023A1 /* Processing */ = {
+			isa = PBXGroup;
+			children = (
+				556962461CCE6DD600525025 /* PieChartViewController.swift */,
+				55954FCF1CD8DD9E003023A1 /* Array2DViewController.swift */,
+				55954FD11CD8E264003023A1 /* DragBoxViewController.swift */,
+				55954FD31CD8E355003023A1 /* StoringInputViewController.swift */,
+				55954FD51CD8E5D9003023A1 /* ContinuousLinesViewController.swift */,
+				55954FD71CD8E64E003023A1 /* PatternsViewController.swift */,
+				55954FD91CD8E707003023A1 /* VectorMathViewController.swift */,
+				55954FDB1CD8E7D3003023A1 /* VectorMath2ViewController.swift */,
+			);
+			path = Processing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,11 +380,18 @@
 				553B331C1CD0776A002EBCAF /* Setting.swift in Sources */,
 				55954FC81CD88A4E003023A1 /* SkypeLoaderView.swift in Sources */,
 				553B331A1CD075FD002EBCAF /* SlackLogo.swift in Sources */,
+				55954FD21CD8E264003023A1 /* DragBoxViewController.swift in Sources */,
 				553B33181CD074F0002EBCAF /* SlackLine.swift in Sources */,
 				5555D7411CCFB902004991BC /* SkypeLoaderViewController.swift in Sources */,
 				556962471CCE6DD600525025 /* PieChartViewController.swift in Sources */,
+				55954FD81CD8E64E003023A1 /* PatternsViewController.swift in Sources */,
+				55954FDA1CD8E707003023A1 /* VectorMathViewController.swift in Sources */,
+				55954FD01CD8DD9E003023A1 /* Array2DViewController.swift in Sources */,
+				55954FD41CD8E355003023A1 /* StoringInputViewController.swift in Sources */,
+				55954FD61CD8E5D9003023A1 /* ContinuousLinesViewController.swift in Sources */,
 				553B33161CD07492002EBCAF /* SlackLogoViewController.swift in Sources */,
 				5569621A1CCE63E600525025 /* SelectSampleViewController.swift in Sources */,
+				55954FDC1CD8E7D3003023A1 /* VectorMath2ViewController.swift in Sources */,
 				556962181CCE63E600525025 /* AppDelegate.swift in Sources */,
 				556962491CCE701000525025 /* SelectSampleTableViewCell.swift in Sources */,
 				5555D73E1CCFA6C4004991BC /* CircleAnimationViewController.swift in Sources */,

@@ -14,5 +14,12 @@ class Setting {
         ("CircleAnimation", CircleAnimationViewController.self),
         ("SkypeLoader", SkypeLoaderViewController.self),
         ("SlackLogo", SlackLogoViewController.self),
+        ("Array2D", Array2DViewController.self),
+        (DragBoxViewController.description(), DragBoxViewController.self),
+        (StoringInputViewController.description(), StoringInputViewController.self),
+        (ContinuousLinesViewController.description(), ContinuousLinesViewController.self),
+        (PatternsViewController.description(), PatternsViewController.self),
+        (VectorMathViewController.description(), VectorMathViewController.self),
+        (VectorMath2ViewController.description(), VectorMath2ViewController.self),
     ]
 }
