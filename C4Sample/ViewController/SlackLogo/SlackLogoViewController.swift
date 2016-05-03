@@ -8,6 +8,8 @@
 
 import C4
 
+// http://c4ios.com/tutorials/slack-logo/
+// 半透明使わないところまで
 class SlackLogoViewController: CanvasController {
     
     override func setup() {

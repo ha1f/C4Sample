@@ -50,6 +50,6 @@ class SlackLogo: View {
             self.rotation += M_PI * 2
         }.animate()
         
-        slackLines.forEach{$0.animate()}
+        slackLines.forEach{ $0.animate() }
     }
 }

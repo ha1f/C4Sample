@@ -23,6 +23,7 @@
 		556962381CCE63E600525025 /* C4SampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556962371CCE63E600525025 /* C4SampleUITests.swift */; };
 		556962471CCE6DD600525025 /* PieChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556962461CCE6DD600525025 /* PieChartViewController.swift */; };
 		556962491CCE701000525025 /* SelectSampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556962481CCE701000525025 /* SelectSampleTableViewCell.swift */; };
+		55954FC81CD88A4E003023A1 /* SkypeLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55954FC71CD88A4E003023A1 /* SkypeLoaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		556962391CCE63E600525025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		556962461CCE6DD600525025 /* PieChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartViewController.swift; sourceTree = "<group>"; };
 		556962481CCE701000525025 /* SelectSampleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectSampleTableViewCell.swift; sourceTree = "<group>"; };
+		55954FC71CD88A4E003023A1 /* SkypeLoaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkypeLoaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				5555D7401CCFB902004991BC /* SkypeLoaderViewController.swift */,
+				55954FC71CD88A4E003023A1 /* SkypeLoaderView.swift */,
 			);
 			path = SkypeLoader;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				553B331C1CD0776A002EBCAF /* Setting.swift in Sources */,
+				55954FC81CD88A4E003023A1 /* SkypeLoaderView.swift in Sources */,
 				553B331A1CD075FD002EBCAF /* SlackLogo.swift in Sources */,
 				553B33181CD074F0002EBCAF /* SlackLine.swift in Sources */,
 				5555D7411CCFB902004991BC /* SkypeLoaderViewController.swift in Sources */,
