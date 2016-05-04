@@ -22,4 +22,9 @@ class ContinuousLinesViewController: CanvasController {
             poly.path = p
         }
     }
+    
+    // ステータスバーを表示
+    override func prefersStatusBarHidden() -> Bool {
+        return false
+    }
 }

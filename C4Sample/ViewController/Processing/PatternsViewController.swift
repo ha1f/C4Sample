@@ -22,4 +22,9 @@ class PatternsViewController: CanvasController {
             }
         }
     }
+    
+    // ステータスバーを表示
+    override func prefersStatusBarHidden() -> Bool {
+        return false
+    }
 }

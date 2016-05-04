@@ -26,4 +26,9 @@ class VectorMathViewController: CanvasController {
             line.rotation = Θ
         }
     }
+    
+    // ステータスバーを表示
+    override func prefersStatusBarHidden() -> Bool {
+        return false
+    }
 }

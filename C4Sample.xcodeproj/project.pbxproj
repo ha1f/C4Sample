@@ -23,6 +23,8 @@
 		556962381CCE63E600525025 /* C4SampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556962371CCE63E600525025 /* C4SampleUITests.swift */; };
 		556962471CCE6DD600525025 /* PieChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556962461CCE6DD600525025 /* PieChartViewController.swift */; };
 		556962491CCE701000525025 /* SelectSampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556962481CCE701000525025 /* SelectSampleTableViewCell.swift */; };
+		557C2CCD1CD9F47300455A22 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557C2CCC1CD9F47300455A22 /* ClockView.swift */; };
+		557C2CCF1CD9F49300455A22 /* AnalogClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557C2CCE1CD9F49300455A22 /* AnalogClockView.swift */; };
 		55954FC81CD88A4E003023A1 /* SkypeLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55954FC71CD88A4E003023A1 /* SkypeLoaderView.swift */; };
 		55954FD01CD8DD9E003023A1 /* Array2DViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55954FCF1CD8DD9E003023A1 /* Array2DViewController.swift */; };
 		55954FD21CD8E264003023A1 /* DragBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55954FD11CD8E264003023A1 /* DragBoxViewController.swift */; };
@@ -74,6 +76,8 @@
 		556962391CCE63E600525025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		556962461CCE6DD600525025 /* PieChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartViewController.swift; sourceTree = "<group>"; };
 		556962481CCE701000525025 /* SelectSampleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectSampleTableViewCell.swift; sourceTree = "<group>"; };
+		557C2CCC1CD9F47300455A22 /* ClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+		557C2CCE1CD9F49300455A22 /* AnalogClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalogClockView.swift; sourceTree = "<group>"; };
 		55954FC71CD88A4E003023A1 /* SkypeLoaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkypeLoaderView.swift; sourceTree = "<group>"; };
 		55954FCF1CD8DD9E003023A1 /* Array2DViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array2DViewController.swift; sourceTree = "<group>"; };
 		55954FD11CD8E264003023A1 /* DragBoxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragBoxViewController.swift; sourceTree = "<group>"; };
@@ -231,6 +235,8 @@
 		55954FDD1CD8E9B0003023A1 /* CoreGraphicsSamples */ = {
 			isa = PBXGroup;
 			children = (
+				557C2CCC1CD9F47300455A22 /* ClockView.swift */,
+				557C2CCE1CD9F49300455A22 /* AnalogClockView.swift */,
 				55954FDE1CD8E9FC003023A1 /* AnalogClockViewController.swift */,
 			);
 			path = CoreGraphicsSamples;
@@ -391,6 +397,7 @@
 				553B331C1CD0776A002EBCAF /* Setting.swift in Sources */,
 				55954FC81CD88A4E003023A1 /* SkypeLoaderView.swift in Sources */,
 				553B331A1CD075FD002EBCAF /* SlackLogo.swift in Sources */,
+				557C2CCF1CD9F49300455A22 /* AnalogClockView.swift in Sources */,
 				55954FD21CD8E264003023A1 /* DragBoxViewController.swift in Sources */,
 				553B33181CD074F0002EBCAF /* SlackLine.swift in Sources */,
 				5555D7411CCFB902004991BC /* SkypeLoaderViewController.swift in Sources */,
@@ -399,6 +406,7 @@
 				55954FDA1CD8E707003023A1 /* VectorMathViewController.swift in Sources */,
 				55954FD01CD8DD9E003023A1 /* Array2DViewController.swift in Sources */,
 				55954FD41CD8E355003023A1 /* StoringInputViewController.swift in Sources */,
+				557C2CCD1CD9F47300455A22 /* ClockView.swift in Sources */,
 				55954FD61CD8E5D9003023A1 /* ContinuousLinesViewController.swift in Sources */,
 				55954FDF1CD8E9FC003023A1 /* AnalogClockViewController.swift in Sources */,
 				553B33161CD07492002EBCAF /* SlackLogoViewController.swift in Sources */,

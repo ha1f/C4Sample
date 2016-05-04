@@ -9,31 +9,44 @@
 import C4
 
 class VectorMath2ViewController: CanvasController {
+    let lineLength = 50.0
+    let originPoint = Point(50, 150)
+    
     override func setup() {
-        let circle = Circle(center: Point(0,0), radius: 10)
+        // 実質円と線
+        let circle = Circle(center: originPoint, radius: 10)
         circle.strokeColor = C4Purple.colorWithAlpha(0.25)
         circle.lineWidth = 20.0
+        circle.masksToBounds = false
         
-        let line = Line((Point(),Point(50,0)))
+        let line = Line((originPoint, Point(originPoint.x + lineLength, originPoint.y)))
         line.opacity = 0.25
-        line.anchorPoint = Point(0,0)
+        line.anchorPoint = Point(0, 0.5)
         line.lineWidth = 20
         line.center = circle.bounds.center
         
         circle.add(line)
         canvas.add(circle)
         
-        var v = Vector()
-        canvas.addPanGestureRecognizer { locations, center, translation, velocity, state in
-            let vl = Vector(center)
-            let dxdy = vl-v
-            let Θ = dxdy.heading
+        canvas.addPanGestureRecognizer {[weak self] locations, center, translation, velocity, state in
+            guard let `self` = self else {
+                return
+            }
             
-            v = vl - Vector(x: cos(Θ) * 50, y: sin(Θ) * 50)
+            let touchVector = Vector(center)
+            let Θ = (touchVector - Vector(circle.center)).heading
+            
+            // タッチの位置から、もとの円の中心方向にlineLength分移動した点に円を移動させる
+            let v = touchVector - Vector(x: cos(Θ) * self.lineLength, y: sin(Θ) * self.lineLength)
             
             ShapeLayer.disableActions = true
             circle.center = Point(v.x, v.y)
             line.rotation = Θ
         }
+    }
+    
+    // ステータスバーを表示
+    override func prefersStatusBarHidden() -> Bool {
+        return false
     }
 }
