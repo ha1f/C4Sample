@@ -21,5 +21,6 @@ class Setting {
         (PatternsViewController.description(), PatternsViewController.self),
         (VectorMathViewController.description(), VectorMathViewController.self),
         (VectorMath2ViewController.description(), VectorMath2ViewController.self),
+        (AnalogClockViewController.description(), AnalogClockViewController.self),
     ]
 }

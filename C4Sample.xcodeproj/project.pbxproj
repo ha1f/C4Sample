@@ -31,6 +31,7 @@
 		55954FD81CD8E64E003023A1 /* PatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55954FD71CD8E64E003023A1 /* PatternsViewController.swift */; };
 		55954FDA1CD8E707003023A1 /* VectorMathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55954FD91CD8E707003023A1 /* VectorMathViewController.swift */; };
 		55954FDC1CD8E7D3003023A1 /* VectorMath2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55954FDB1CD8E7D3003023A1 /* VectorMath2ViewController.swift */; };
+		55954FDF1CD8E9FC003023A1 /* AnalogClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55954FDE1CD8E9FC003023A1 /* AnalogClockViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		55954FD71CD8E64E003023A1 /* PatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatternsViewController.swift; sourceTree = "<group>"; };
 		55954FD91CD8E707003023A1 /* VectorMathViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VectorMathViewController.swift; sourceTree = "<group>"; };
 		55954FDB1CD8E7D3003023A1 /* VectorMath2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VectorMath2ViewController.swift; sourceTree = "<group>"; };
+		55954FDE1CD8E9FC003023A1 /* AnalogClockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalogClockViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +207,7 @@
 			children = (
 				556962191CCE63E600525025 /* SelectSampleViewController.swift */,
 				556962481CCE701000525025 /* SelectSampleTableViewCell.swift */,
+				55954FDD1CD8E9B0003023A1 /* CoreGraphicsSamples */,
 				553B33131CD0498E002EBCAF /* C4Samples */,
 			);
 			path = ViewController;
@@ -223,6 +226,14 @@
 				55954FDB1CD8E7D3003023A1 /* VectorMath2ViewController.swift */,
 			);
 			path = Processing;
+			sourceTree = "<group>";
+		};
+		55954FDD1CD8E9B0003023A1 /* CoreGraphicsSamples */ = {
+			isa = PBXGroup;
+			children = (
+				55954FDE1CD8E9FC003023A1 /* AnalogClockViewController.swift */,
+			);
+			path = CoreGraphicsSamples;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,6 +400,7 @@
 				55954FD01CD8DD9E003023A1 /* Array2DViewController.swift in Sources */,
 				55954FD41CD8E355003023A1 /* StoringInputViewController.swift in Sources */,
 				55954FD61CD8E5D9003023A1 /* ContinuousLinesViewController.swift in Sources */,
+				55954FDF1CD8E9FC003023A1 /* AnalogClockViewController.swift in Sources */,
 				553B33161CD07492002EBCAF /* SlackLogoViewController.swift in Sources */,
 				5569621A1CCE63E600525025 /* SelectSampleViewController.swift in Sources */,
 				55954FDC1CD8E7D3003023A1 /* VectorMath2ViewController.swift in Sources */,
