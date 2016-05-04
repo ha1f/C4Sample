@@ -211,7 +211,7 @@
 			children = (
 				556962191CCE63E600525025 /* SelectSampleViewController.swift */,
 				556962481CCE701000525025 /* SelectSampleTableViewCell.swift */,
-				55954FDD1CD8E9B0003023A1 /* CoreGraphicsSamples */,
+				55954FDD1CD8E9B0003023A1 /* UIKitSamples */,
 				553B33131CD0498E002EBCAF /* C4Samples */,
 			);
 			path = ViewController;
@@ -232,13 +232,14 @@
 			path = Processing;
 			sourceTree = "<group>";
 		};
-		55954FDD1CD8E9B0003023A1 /* CoreGraphicsSamples */ = {
+		55954FDD1CD8E9B0003023A1 /* UIKitSamples */ = {
 			isa = PBXGroup;
 			children = (
 				557C2CCC1CD9F47300455A22 /* ClockView.swift */,
 				557C2CCE1CD9F49300455A22 /* AnalogClockView.swift */,
 				55954FDE1CD8E9FC003023A1 /* AnalogClockViewController.swift */,
 			);
+			name = UIKitSamples;
 			path = CoreGraphicsSamples;
 			sourceTree = "<group>";
 		};
