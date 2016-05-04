@@ -17,21 +17,27 @@ class SlackLine: View {
         }
     }
     
+    private var seq: ViewAnimationSequence!
+    
     init(size: Double) {
         super.init()
         self.frame = Rect(0, 0, size, size * 9.0/53.0)
         line = Line(Point(height/2.0, height/2.0), Point(width-height/2.0, height/2.0))
         line.lineWidth = height
         add(line)
+        
+        createAnimation()
     }
     
-    func animate() {
+    private func createAnimation() {
+        // 書き出しの点だけにする
         let strokeOut = ViewAnimation(duration: 0.25) {
             self.line.strokeEnd = 0.01
         }
         strokeOut.curve = .EaseOut
         strokeOut.delay = 0.1
         
+        // 書き終わりの点だけにする
         let shiftStroke = ViewAnimation(duration: 0.25) {
             self.line.strokeStart = 0.99
             self.line.strokeEnd = 1.0
@@ -39,6 +45,7 @@ class SlackLine: View {
         shiftStroke.delay = 0.35
         shiftStroke.curve = .EaseIn
         
+        // やや縮小
         let strokeIn = ViewAnimation(duration: 0.15) {
             self.line.lineWidth -= 1
             self.line.strokeStart = 0.05
@@ -46,13 +53,16 @@ class SlackLine: View {
         }
         strokeIn.delay = 0.2
         
+        // 元通りに
         let bounceOut = ViewAnimation(duration: 0.15) {
             self.line.transform.scale(1.05, 1.0)
             self.line.lineWidth += 1
             self.line.strokeStart = 0.0
         }
-        
-        let seq = ViewAnimationSequence(animations: [strokeOut, shiftStroke, strokeIn, bounceOut])
+        seq = ViewAnimationSequence(animations: [strokeOut, shiftStroke, strokeIn, bounceOut])
+    }
+    
+    func animate() {
         seq.animate()
     }
 }
